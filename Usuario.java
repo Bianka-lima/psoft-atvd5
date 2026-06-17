@@ -18,22 +18,9 @@ public class Usuario {
        return ordenador.ordenar(elementos);
     }
 
-    public void setBubble() {
-        ordenador = new BubbleSort();
+    public void setOrdenador(Ordenador<Integer> ordenador) {
+        this.ordenador = ordenador;
     }
-
-    public void setInsertion() {
-        ordenador = new InsertionSort();
-    }
-
-    public void setMerge() {
-        ordenador = new MergeSort();
-    }
-
-    public void setQuick() {
-        ordenador = new QuickSort();
-    }
-
 
     public String getNome() {
         return nome;
